@@ -27,7 +27,8 @@ class App extends React.Component {
         tasks.push(this.state.currtask);
         document.getElementById('inputfield').value = "";
         this.setState({
-            tasklist: tasks
+            tasklist: tasks,
+            currtask: ""
         });
         console.log(this.state.tasklist);
     };
