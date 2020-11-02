@@ -23,8 +23,11 @@ class App extends React.Component {
         });
     };
     addItem = (e) => {
+        e.preventDefault();
         var tasks = this.state.tasklist;
-        tasks.push(this.state.currtask);
+        if (this.state.currtask != "") {
+            tasks.push(this.state.currtask);
+        }
         document.getElementById('inputfield').value = "";
         this.setState({
             tasklist: tasks,
@@ -35,6 +38,8 @@ class App extends React.Component {
     render() {
         return ( <
             div className = "Container" >
+            <
+            form onSubmit = { this.addItem } >
             <
             div className = "inputBox" >
             <
@@ -47,12 +52,14 @@ class App extends React.Component {
             placeholder = "Enter Some Task" / >
             <
             button id = "addbutton"
+            type = "submit"
             onClick = { this.addItem } > Add < /button> < /
             span > <
             /div>  <
             List tasklist = { this.state.tasklist }
             del = { this.delItem }
-            /> < /
+            />  < /
+            form > < /
             div >
         );
     }
