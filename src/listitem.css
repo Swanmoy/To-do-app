@@ -1,0 +1,11 @@
+.list {
+    background-color: #BF07AC;
+    color: white;
+    height: 50px;
+    align: center;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+
