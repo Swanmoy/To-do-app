@@ -3,7 +3,7 @@ body {
 }
 
 .Container {
-    min-width: 500px;
+    width: 500px;
     min-height: 600px;
     margin: 20px auto;
     background-color: #c7ca08;
@@ -49,7 +49,7 @@ body {
 
 #listItem {
     background-color: #dd19dd;
-    min-width: 450px;
+    width: 450px;
     min-height: 50px;
     margin-top: 10px;
     margin-left: 20px;
