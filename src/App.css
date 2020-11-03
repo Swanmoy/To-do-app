@@ -74,6 +74,8 @@ body {
     right: 15px;
     position: absolute;
     height: 40px;
+    margin-left: 10px;
+    top: 15px;
 }
 
 .delbtn:focus {
